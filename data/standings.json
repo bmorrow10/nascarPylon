@@ -1,0 +1,305 @@
+{
+  "drivers": [
+    {
+      "position": 1,
+      "driver": "Larson",
+      "points": 5034,
+      "pointsBack": 0,
+      "car": "5"
+    },
+    {
+      "position": 2,
+      "driver": "Hamlin",
+      "points": 5031,
+      "pointsBack": 3,
+      "car": "11"
+    },
+    {
+      "position": 3,
+      "driver": "Briscoe",
+      "points": 5019,
+      "pointsBack": 15,
+      "car": "14"
+    },
+    {
+      "position": 4,
+      "driver": "Byron",
+      "points": 5004,
+      "pointsBack": 30,
+      "car": "24"
+    },
+    {
+      "position": 5,
+      "driver": "Bell",
+      "points": 2403,
+      "pointsBack": 2631,
+      "car": "20"
+    },
+    {
+      "position": 6,
+      "driver": "Blaney",
+      "points": 2373,
+      "pointsBack": 2661,
+      "car": "12"
+    },
+    {
+      "position": 7,
+      "driver": "Logano",
+      "points": 2330,
+      "pointsBack": 2704,
+      "car": "22"
+    },
+    {
+      "position": 8,
+      "driver": "Elliott",
+      "points": 2310,
+      "pointsBack": 2724,
+      "car": "9"
+    },
+    {
+      "position": 9,
+      "driver": "Reddick",
+      "points": 2309,
+      "pointsBack": 2725,
+      "car": "45"
+    },
+    {
+      "position": 10,
+      "driver": "Chastain",
+      "points": 2272,
+      "pointsBack": 2762,
+      "car": "1"
+    },
+    {
+      "position": 11,
+      "driver": "Wallace",
+      "points": 2256,
+      "pointsBack": 2778,
+      "car": "23"
+    },
+    {
+      "position": 12,
+      "driver": "Gisbergen",
+      "points": 2211,
+      "pointsBack": 2823,
+      "car": "#12"
+    },
+    {
+      "position": 13,
+      "driver": "Bowman",
+      "points": 2192,
+      "pointsBack": 2842,
+      "car": "48"
+    },
+    {
+      "position": 14,
+      "driver": "Cindric",
+      "points": 2156,
+      "pointsBack": 2878,
+      "car": "2"
+    },
+    {
+      "position": 15,
+      "driver": "Dillon",
+      "points": 2152,
+      "pointsBack": 2882,
+      "car": "3"
+    },
+    {
+      "position": 16,
+      "driver": "Berry",
+      "points": 2150,
+      "pointsBack": 2884,
+      "car": "4"
+    },
+    {
+      "position": 17,
+      "driver": "Buescher",
+      "points": 889,
+      "pointsBack": 4145,
+      "car": "17"
+    },
+    {
+      "position": 18,
+      "driver": "Preece",
+      "points": 861,
+      "pointsBack": 4173,
+      "car": "41"
+    },
+    {
+      "position": 19,
+      "driver": "Gibbs",
+      "points": 783,
+      "pointsBack": 4251,
+      "car": "54"
+    },
+    {
+      "position": 20,
+      "driver": "Keselowski",
+      "points": 762,
+      "pointsBack": 4272,
+      "car": "6"
+    },
+    {
+      "position": 21,
+      "driver": "Busch",
+      "points": 737,
+      "pointsBack": 4297,
+      "car": "8"
+    },
+    {
+      "position": 22,
+      "driver": "McDowell",
+      "points": 734,
+      "pointsBack": 4300,
+      "car": "34"
+    },
+    {
+      "position": 23,
+      "driver": "Hocevar",
+      "points": 702,
+      "pointsBack": 4332,
+      "car": "77"
+    },
+    {
+      "position": 24,
+      "driver": "Jones",
+      "points": 665,
+      "pointsBack": 4369,
+      "car": "43"
+    },
+    {
+      "position": 25,
+      "driver": "Nemechek",
+      "points": 664,
+      "pointsBack": 4370,
+      "car": "42"
+    },
+    {
+      "position": 26,
+      "driver": "Allmendinger",
+      "points": 649,
+      "pointsBack": 4385,
+      "car": "16"
+    },
+    {
+      "position": 27,
+      "driver": "Gilliland",
+      "points": 616,
+      "pointsBack": 4418,
+      "car": "38"
+    },
+    {
+      "position": 28,
+      "driver": "Smith",
+      "points": 615,
+      "pointsBack": 4419,
+      "car": "71"
+    },
+    {
+      "position": 29,
+      "driver": "Suarez",
+      "points": 611,
+      "pointsBack": 4423,
+      "car": "99"
+    },
+    {
+      "position": 30,
+      "driver": "Jr.",
+      "points": 562,
+      "pointsBack": 4472,
+      "car": "#30"
+    },
+    {
+      "position": 31,
+      "driver": "Haley",
+      "points": 559,
+      "pointsBack": 4475,
+      "car": "51"
+    },
+    {
+      "position": 32,
+      "driver": "Custer",
+      "points": 486,
+      "pointsBack": 4548,
+      "car": "41"
+    },
+    {
+      "position": 33,
+      "driver": "Dillon",
+      "points": 477,
+      "pointsBack": 4557,
+      "car": "3"
+    },
+    {
+      "position": 34,
+      "driver": "Gragson",
+      "points": 440,
+      "pointsBack": 4594,
+      "car": "10"
+    },
+    {
+      "position": 35,
+      "driver": "Herbst",
+      "points": 399,
+      "pointsBack": 4635,
+      "car": "98"
+    },
+    {
+      "position": 36,
+      "driver": "Ware",
+      "points": 233,
+      "pointsBack": 4801,
+      "car": "15"
+    },
+    {
+      "position": 37,
+      "driver": "Legge",
+      "points": 63,
+      "pointsBack": 4971,
+      "car": "50"
+    },
+    {
+      "position": 38,
+      "driver": "Johnson",
+      "points": 35,
+      "pointsBack": 4999,
+      "car": "84"
+    },
+    {
+      "position": 39,
+      "driver": "Kraus",
+      "points": 6,
+      "pointsBack": 5028,
+      "car": "#39"
+    },
+    {
+      "position": 40,
+      "driver": "Finchum",
+      "points": 5,
+      "pointsBack": 5029,
+      "car": "#40"
+    },
+    {
+      "position": 41,
+      "driver": "Myers",
+      "points": 1,
+      "pointsBack": 5033,
+      "car": "#41"
+    },
+    {
+      "position": 42,
+      "driver": "Jr.",
+      "points": 1,
+      "pointsBack": 5033,
+      "car": "#42"
+    },
+    {
+      "position": 43,
+      "driver": "Castroneves",
+      "points": 0,
+      "pointsBack": 5034,
+      "car": "#43"
+    }
+  ]
+}

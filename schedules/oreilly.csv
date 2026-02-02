@@ -1,0 +1,34 @@
+round,raceName,track,location,date,day,startTime,broadcast,distance,laps,isChase
+1,United Rentals 300,Daytona International Speedway,"Daytona Beach, FL",2026-02-14,Saturday,17:00,CW,300 mi,120,false
+2,Bennett Transportation & Logistics 250,Atlanta Motor Speedway,"Hampton, GA",2026-02-21,Saturday,17:00,CW,251.02 mi,163,false
+3,Focused Health 250,Circuit of the Americas,"Austin, TX",2026-02-28,Saturday,15:00,CW,156 mi,65,false
+4,GovX 200,Phoenix Raceway,"Avondale, AZ",2026-03-07,Saturday,19:30,CW,200 mi,200,false
+5,The LiUNA!,Las Vegas Motor Speedway,"Las Vegas, NV",2026-03-14,Saturday,17:30,CW,300 mi,200,false
+6,Sport Clips Haircuts VFW Help a Hero 200,Darlington Raceway,"Darlington, SC",2026-03-21,Saturday,17:30,CW,200.8 mi,147,false
+7,NFPA 250,Martinsville Speedway,"Ridgeway, VA",2026-03-28,Saturday,15:30,CW,131.5 mi,250,false
+8,North Carolina Education Lottery 250 Presented by Black's Tire,Rockingham Speedway,"Rockingham, NC",2026-04-04,Saturday,14:30,CW,235 mi,250,false
+9,NASCAR O'Reilly Auto Parts Series Race at Bristol,Bristol Motor Speedway,"Bristol, TN",2026-04-11,Saturday,19:30,CW,159.9 mi,300,false
+10,Kansas Lottery 300,Kansas Speedway,"Kansas City, KS",2026-04-18,Saturday,19:00,CW,300 mi,200,false
+11,NASCAR O'Reilly Auto Parts Series Race at Talladega,Talladega Superspeedway,"Talladega, AL",2026-04-25,Saturday,16:00,CW,300.58 mi,113,false
+12,Andy's Frozen Custard 340,Texas Motor Speedway,"Fort Worth, TX",2026-05-02,Saturday,15:30,CW,300 mi,200,false
+13,Mission 200 at The Glenn,Watkins Glenn International,"Wakins Glenn, NY",2026-05-09,Saturday,16:00,CW,200.9 mi,82,false
+14,BetRivers 200,Dover Motor Speedway,"Dover, DE",2026-05-16,Saturday,16:00,CW,200 mi,200,false
+15,NASCAR O'Reilly Auto Parts Series Race at Charlotte,Charlotte Motor Speedway,"Concord, NC",2026-05-23,Saturday,17:00,CW,300 mi,200,false
+16,Tennessee Lottery 250,Nashville Superspeedway,"Lebanon, TN",2026-05-30,Saturday,19:30,CW,250.04 mi,188,false
+17,NASCAR O'Reilly Auto Parts Series Race at Pocono,Pocono Raceway,"Long Pond, PA",2026-06-13,Saturday,16:00,CW,250 mi,100,false
+18,NASCAR O'Reilly Auto Parts Series Race at San Diego,Naval Base Coronado,"San Diego, CA",2026-06-20,Saturday,17:00,CW,TBA mi,0,false
+19,NASCAR O'Reilly Auto Parts Series Race at Sonoma,Sonoma Raceway,"Sonoma, CA",2026-06-27,Saturday,17:30,CW,159.95 mi,79,false
+20,NASCAR O'Reilly Auto Parts Series Race at Chicagoland,Chicagoland Speedway,"Joliet, IL",2026-07-04,Saturday,17:30,CW,TBA mi,0,false
+21,Focused Health 250,Atlanta Motor Speedway,"Hampton, GA",2026-07-11,Saturday,19:00,CW,251.02 mi,163,false
+22,NASCAR O'Reilly Auto Parts Series Race at Indianapolis,Indianapolis Motor Speedway,"Speedway, IN",2026-07-25,Saturday,16:00,CW,250 mi,100,false
+23,NASCAR O'Reilly Auto Parts Series Race at Iowa,Iowa Speedway,"Newton, IA",2026-08-08,Saturday,17:00,CW,218.75 mi,250,false
+24,Wawa 250 Powered by Coca-Cola,Daytona International Speedway,"Daytona Beach, FL",2026-08-28,Saturday,19:30,CW,250 mi,100,false
+25,NASCAR O'Reilly Auto Parts Series Race at Darlington,Darlington Raceway,"Darlington, SC",2026-09-05,Saturday,19:30,CW,TBA mi,0,true
+26,Nu Way 225 Sauced by Blues Hog,Gateway Motorsports Park,"Madison, IL",2026-09-12,Saturday,19:30,CW,225 mi,180,true
+27,Food City 300,Bristol Motor Speedway,"Bristol, TN",2026-09-18,Friday,19:30,CW,159.9 mi,300,true
+28,Focused Health 302,Las Vegas Motor Speedway,"Las Vegas, NV",2026-10-03,Saturday,19:30,CW,301.5 mi,201,true
+29,Blue Cross NC 250,Charlotte Motor Speedway,"Concord, NC",2026-10-10,Saturday,16:00,CW,TBD mi,0,true
+30,NASCAR O'Reilly Auto Parts Series Race at Phoenix,Phoenix Raceway,"Avondale, AZ",2026-10-17,Saturday,19:30,CW,200 mi,200,true
+31,The Progress Group 250,Talladega Superspeedway,"Talladega, AL",2026-10-24,Saturday,15:30,CW,250.04 mi,94,true
+32,NASCAR O'Reilly Auto Parts Series Race at Martinsville,Martinsville Speedway,"Ridgeway, VA",2026-10-31,Saturday,16:00,CW,131.5 mi,250,true
+33,NASCAR O'Reilly Auto Parts Series Championship Race,Homestead-Miami Speedway,"Homestead, FL",2026-11-07,Saturday,17:00,CW,300 mi,200,true

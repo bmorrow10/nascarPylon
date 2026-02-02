@@ -1,0 +1,26 @@
+round,raceName,track,location,date,day,startTime,broadcast,distance,laps,isChase
+1,Fresh From Florida 250,Daytona International Speedway,"Daytona Beach, FL",2026-02-13,Friday,19:30,FS1,250 mi,100,false
+2,Fr8 Racing 208,Atlanta Motor Speedway,"Hampton, GA",2026-02-21,Saturday,13:30,FS1,207.9 mi,135,false
+3,NASCAR Craftsman Truck Series Race at St. Petersburg,Grand Prix of St. Petersburg,"St. Petersburg, FL",2026-02-28,Saturday,12:00,FS1,TBA mi,0,false
+4,NASCAR Craftsman Truck Series Race at Darlington,Darlington Raceway,"Darlington, SC",2026-03-20,Friday,19:30,FS1,200.8 mi,147,false
+5,Black's Tire 200,Rockingham Speedway,"Rockingham, NC",2026-04-03,Friday,16:30,FS1,188 mi,200,false
+6,Tennessee Army National Guard 250,Bristol Motor Speedway,"Bristol, TN",2026-04-10,Friday,19:30,FS1,133.25 mi,250,false
+7,SpeedyCash.com 250,Texas Motor Speedway,"Fort Worth, TX",2026-05-01,Friday,20:00,FS1,250.5 mi,167,false
+8,NASCAR Craftsman Truck Series Race at Watkins Glenn,Watkins Glenn International,"Wakins Glenn, NY",2026-05-08,Friday,16:30,FS1,176.4 mi,72,false
+9,ECOSAVE 200,Dover Motor Speedway,"Dover, DE",2026-05-15,Friday,17:00,FS1,TBA mi,0,false
+10,North Carolina Education Lottery 200,Charlotte Motor Speedway,"Concord, NC",2026-05-22,Friday,19:30,FS1,201 mi,134,false
+11,Flote 200,Nashville Superspeedway,"Lebanon, TN",2026-05-29,Friday,20:00,FS1,199.5 mi,150,false
+12,NASCAR Craftsman Truck Series Race at Michigan,Michigan International Speedway,"Brooklyn, MI",2026-06-06,Saturday,13:30,FS1,250 mi,125,false
+13,NASCAR Craftsman Truck Series Race at San Diego,Naval Base Coronado,"San Diego, CA",2026-06-19,Friday,19:00,FS1,TBA mi,0,false
+14,NASCAR Craftsman Truck Series Race at Lime Rock,Lime Rock Park,"Lime Rock, CT",2026-07-11,Saturday,13:00,FS1,147.8 mi,100,false
+15,Window World 250,North Wilkesboro Speedway,"North Wilkesboro, NC",2026-07-18,Saturday,12:30,FS1,156.25 mi,250,false
+16,NASCAR Craftsman Truck Series Race at IRP,Indianapolis Raceway Park,"Indianapolis, IN",2026-07-24,Friday,20:00,FS1,137.2 mi,200,false
+17,NASCAR Craftsman Truck Series Race at Richmond,Richmond Raceway,"Richmond, VA",2026-08-14,Friday,19:30,FS1,187.5 mi,250,false
+18,EJP 175,New Hampshire Motor Speedway,"Loudon, NH",2026-08-22,Saturday,13:30,FS1,185.15 mi,176,false
+19,UNOH 250 Presented by Ohio Logistics,Bristol Motor Speedway,"Bristol, TN",2026-09-17,Thursday,20:00,FS1,133.25 mi,250,true
+20,NASCAR Craftsman Truck Series Race at Kansas,Kansas Speedway,"Kansas City, KS",2026-09-26,Saturday,13:00,FS1,201 mi,134,true
+21,NASCAR Craftsman Truck Series Race at Charlotte,Charlotte Motor Speedway,"Concord, NC",2026-10-09,Friday,17:00,FS1,TBD mi,0,true
+22,NASCAR Craftsman Truck Series Race at Phoenix,Phoenix Raceway,"Avondale, AZ",2026-10-16,Friday,19:30,FS1,150 mi,150,true
+23,NASCAR Craftsman Truck Series Race at Talladega,Talladega Superspeedway,"Talladega, AL",2026-10-23,Friday,16:00,FS1,226.1 mi,85,true
+24,NASCAR Craftsman Truck Series Race at Martinsville,Martinsville Speedway,"Ridgeway, VA",2026-10-30,Saturday,18:00,FS1,105.2 mi,200,true
+25,NASCAR Craftsman Truck Series Championship Race,Homestead-Miami Speedway,"Homestead, FL",2026-11-06,Friday,19:30,FS1,201 mi,134,true

@@ -1,0 +1,41 @@
+round,raceName,track,location,date,day,startTime,broadcast,distance,laps,isChase
+1,Clash,Bowman Gray,"Winston Salem, NC",2026-02-01,Sunday,20:00,FOX,50.6 mi,200,false
+2,250 Florida Duel 1 at Daytona,Daytona International Speedway,"Daytona Beach, FL",2026-02-12,Thursday,19:00,FS1,150 mi,60,false
+3,250 Florida Duel 2 at Daytona,Daytona International Speedway,"Daytona Beach, FL",2026-02-12,Thursday,20:45,FS1,150 mi,60,false
+4,Daytona 500,Daytona International Speedway,"Daytona Beach, FL",2026-02-15,Sunday,14:30,FOX,500 mi,200,false
+5,Autotrader 400,Atlanta Motor Speedway,"Hampton, GA",2026-02-22,Sunday,15:00,FOX,400 mi,260,false
+6,DuraMax Grand Prix,Circuit of the Americas,"Austin, TX",2026-03-01,Sunday,15:30,FOX,228 mi,95,false
+7,Straight Talk Wireless 500,Phoenix Raceway,"Avondale, AZ",2026-03-08,Sunday,15:30,FS1,312 mi,312,false
+8,Pennzoil 400 presented by Jiffy Lube,Las Vegas Motor Speedway,"Las Vegas, NV",2026-03-15,Sunday,16:00,FS1,400.5 mi,267,false
+9,Goodyear 400,Darlington Raceway,"Darlington, SC",2026-03-22,Sunday,15:00,FS1,400.24 mi,293,false
+10,Cook Out 400,Martinsville Speedway,"Ridgeway, VA",2026-03-29,Sunday,15:30,FS1,210.4 mi,400,false
+11,Food City 500,Bristol Motor Speedway,"Bristol, TN",2026-04-12,Sunday,15:00,FS1,266.5 mi,500,false
+12,AdventHealth 400,Kansas Speedway,"Kansas City, KS",2026-04-19,Sunday,14:00,FOX,400.5 mi,267,false
+13,Jack Link's 500,Talladega Superspeedway,"Talladega, AL",2026-04-26,Sunday,15:00,FOX,500.08 mi,188,false
+14,Würth 400 presented by Liqui Moly,Texas Motor Speedway,"Fort Worth, TX",2026-05-03,Sunday,15:30,FS1,400.5 mi,267,false
+15,Go Bowling at The Glenn,Watkins Glenn International,"Wakins Glenn, NY",2026-05-10,Sunday,15:00,FS1,245 mi,100,false
+16,Nascar All-Star Race,Dover Motor Speedway,"Dover, DE",2026-05-17,Sunday,15:00,FS1,TBA mi,0,false
+17,World 600,Charlotte Motor Speedway,"Concord, NC",2026-05-24,Sunday,18:00,Prime,600 mi,400,false
+18,Cracker Barrel 400,Nashville Superspeedway,"Lebanon, TN",2026-05-31,Sunday,19:00,Prime,399 mi,300,false
+19,FireKeepers Casino 400,Michigan International Speedway,"Brooklyn, MI",2026-06-07,Sunday,15:00,Prime,400 mi,200,false
+20,NASCAR Cup Series Race at Pocono,Pocono Raceway,"Long Pond, PA",2026-06-14,Sunday,15:00,Prime,400 mi,160,false
+21,Anduril 250,Naval Base Coronado,"San Diego, CA",2026-06-21,Sunday,16:00,Prime,TBA mi,0,false
+22,Toyota / Save Mart 350,Sonoma Raceway,"Sonoma, CA",2026-06-28,Sunday,15:30,TNT,218.9 mi,110,false
+23,NASCAR Cup Series Race at Chicagoland,Chicagoland Speedway,"Joliet, IL",2026-07-05,Sunday,18:00,TNT,TBA mi,0,false
+24,Quaker State 400 Available at Walmart,Atlanta Motor Speedway,"Hampton, GA",2026-07-12,Sunday,19:00,TNT,400.4 mi,260,false
+25,Window World 450,North Wilkesboro Speedway,"North Wilkesboro, NC",2026-07-19,Sunday,19:00,TNT,281.25 mi,450,false
+26,Brickyard 400,Indianapolis Motor Speedway,"Speedway, IN",2026-07-26,Sunday,14:00,TNT,400 mi,160,false
+27,Iowa Corn 350 Powered by Ethanol,Iowa Speedway,"Newton, IA",2026-08-09,Sunday,15:30,USA,306.25 mi,350,false
+28,Cook Out 400,Richmond Raceway,"Richmond, VA",2026-08-15,Saturday,19:00,USA,300 mi,400,false
+29,NASCAR Cup Series Race at New Hampshire,New Hampshire Motor Speedway,"Loudon, NH",2026-08-23,Sunday,15:00,USA,318.46 mi,301,false
+30,Coke Zero Sugar 400,Daytona International Speedway,"Daytona Beach, FL",2026-08-29,Saturday,19:30,NBC,400 mi,160,false
+31,Southern 500,Darlington Raceway,"Darlington, SC",2026-09-06,Sunday,17:00,USA,501.32 mi,367,true
+32,Enjoy Illinois 300,Gateway Motorsports Park,"Madison, IL",2026-09-13,Sunday,15:00,USA,300 mi,240,true
+33,Bristol Night Race,Bristol Motor Speedway,"Bristol, TN",2026-09-19,Saturday,19:30,USA,266.5 mi,500,true
+34,Hollywood Casino 400,Kansas Speedway,"Kansas City, KS",2026-09-27,Sunday,15:00,USA,400.5 mi,267,true
+35,South Point 400,Las Vegas Motor Speedway,"Las Vegas, NV",2026-10-04,Sunday,17:30,USA,400.5 mi,267,true
+36,Bank of America 400,Charlotte Motor Speedway,"Concord, NC",2026-10-11,Sunday,15:00,USA,TBD mi,0,true
+37,Freeway Insurance 500,Phoenix Raceway,"Avondale, AZ",2026-10-18,Sunday,15:00,USA,312 mi,312,true
+38,Yellawood 500,Talladega Superspeedway,"Talladega, AL",2026-10-25,Sunday,14:00,NBC,500.08 mi,188,true
+39,Xfinity 500,Martinsville Speedway,"Ridgeway, VA",2026-11-01,Sunday,14:00,NBC,263 mi,500,true
+40,NASCAR Cup Series Championship Race,Homestead-Miami Speedway,"Homestead, FL",2026-11-08,Sunday,15:00,NBC,400.5 mi,267,true
