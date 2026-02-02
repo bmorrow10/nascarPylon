@@ -30,7 +30,6 @@ Thumbs.db
 
 # Project specific
 # Uncomment these if you want to ignore data files in version control
-# (Keep them commented if you want sample data in the repo)
 # data/liveRace.json
 # data/*.json
 
