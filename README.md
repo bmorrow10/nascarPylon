@@ -167,11 +167,49 @@ This is a personal project but feel free to fork and adapt for your own use!
 
 MIT License - See LICENSE file for details
 
-## Acknowledgments
+# Acknowledgments
 
-- NASCAR for the data
-- The LED matrix community for hardware inspiration
-- My love of racing and tinkering with tech 🏁
+This project was inspired by and builds upon the amazing work of the NASCAR community.
+
+## Inspiration & Prior Art
+
+### 🏆 Direct Inspirations
+
+**u/Leuel48Fan** - [8ft Custom LED NASCAR Scoring Tower](https://www.reddit.com/r/NASCAR/comments/1bsiydv/i_build_an_8ft_custom_led_nascar_scoring_tower/)
+- Amazing physical build that inspired this project
+- Showed what's possible with LED displays and NASCAR data
+- Reddit user who documented their incredible scoring tower
+
+**u/GoDuke4382** (RRoberts4382 on GitHub)
+- Created [rNascar23](https://github.com/RRoberts4382/rNascar23-Releases)
+- Developed [rNascar23.Sdk](https://github.com/RRoberts4382/rNascar23.Sdk) - C# SDK for NASCAR data
+- Pioneered accessing NASCAR's feed.nascar.com endpoints
+- Provided invaluable reference for API structure and data sources
+
+## Data Sources
+
+- **NASCAR** - For providing public data feeds at feed.nascar.com
+- **ESPN** - For standings and schedule data
+- The broader **NASCAR community** on Reddit for discussions and ideas
+
+## Open Source Libraries & Tools
+
+This project wouldn't be possible without:
+- Python and the Python community
+- Future: [rpi-rgb-led-matrix](https://github.com/hzeller/rpi-rgb-led-matrix) by Henner Zeller
+
+## Community
+
+Special thanks to:
+- r/NASCAR subreddit community
+- Everyone who shares their projects and inspires others
+- Future contributors to this project
+
+---
+
+**If you're inspired by this project, please continue the chain!**
+
+Share your builds, credit your sources, and help the community grow. 🏁
 
 ---
 
