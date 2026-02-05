@@ -11,7 +11,7 @@ scroll = 0
 
 # Auto-detect mode based on race data and schedule
 # Set to None for auto-detection, or manually set to "LIVE" or "IDLE" to override
-MODE_OVERRIDE = "IDLE"
+MODE_OVERRIDE = None
 
 while True:
     # Determine current mode

@@ -1,190 +1,287 @@
 {
   "series": "CUP",
-  "track": "Bowman Gray",
-  "flag": "GREEN",
-  "lap": 45,
+  "track": "Bowman Gray Stadium",
+  "flag": "UNKNOWN",
+  "lap": 200,
   "lapsTotal": 200,
-  "lastUpdate": "2026-02-03T06:31:21.917609",
+  "lapsToGo": 0,
+  "lastUpdate": "2026-02-05T03:39:09.493514",
   "cars": [
     {
       "position": 1,
-      "car": "24",
-      "driver": "Byron",
-      "interval": null
+      "car": "60",
+      "driver": "Preece",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 2,
-      "car": "5",
-      "driver": "Larson",
-      "interval": 0.234
+      "car": "24",
+      "driver": "Byron",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 3,
-      "car": "11",
-      "driver": "Hamlin",
-      "interval": 0.567
+      "car": "12",
+      "driver": "Blaney",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 4,
-      "car": "9",
-      "driver": "Elliott",
-      "interval": 0.089
+      "car": "7",
+      "driver": "Suarez",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 5,
-      "car": "48",
-      "driver": "Bowman",
-      "interval": 0.145
+      "car": "11",
+      "driver": "Hamlin",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 6,
-      "car": "12",
-      "driver": "Blaney",
-      "interval": 0.421
+      "car": "19",
+      "driver": "Briscoe",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 7,
-      "car": "19",
-      "driver": "Truex",
-      "interval": 0.089
+      "car": "3",
+      "driver": "Dillon",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 8,
-      "car": "22",
-      "driver": "Logano",
-      "interval": 0.734
+      "car": "17",
+      "driver": "Buescher",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 9,
-      "car": "20",
-      "driver": "Bell",
-      "interval": 0.312
+      "car": "1",
+      "driver": "Chastain",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 10,
-      "car": "1",
-      "driver": "Chastain",
-      "interval": 0.198
+      "car": "48",
+      "driver": "Bowman",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 11,
-      "car": "45",
-      "driver": "Reddick",
-      "interval": 0.856
+      "car": "22",
+      "driver": "Logano",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 12,
-      "car": "8",
-      "driver": "Busch",
-      "interval": 1.234
+      "car": "21",
+      "driver": "Berry",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 13,
-      "car": "23",
-      "driver": "Wallace",
-      "interval": 1.567
+      "car": "20",
+      "driver": "Bell",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 14,
-      "car": "99",
-      "driver": "Suarez",
-      "interval": 0.123
+      "car": "54",
+      "driver": "Gibbs",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 15,
-      "car": "17",
-      "driver": "Buescher",
-      "interval": 2.145
+      "car": "77",
+      "driver": "Hocevar",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 16,
-      "car": "6",
-      "driver": "Keselowski",
-      "interval": 2.678
+      "car": "5",
+      "driver": "Larson",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 17,
-      "car": "3",
-      "driver": "Dillon",
-      "interval": 3.012
+      "car": "9",
+      "driver": "Elliott",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 18,
-      "car": "41",
-      "driver": "Preece",
-      "interval": 0.234
+      "car": "88",
+      "driver": "Zilisch",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 19,
-      "car": "54",
-      "driver": "Gibbs",
-      "interval": 3.789
+      "car": "8",
+      "driver": "Busch",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 20,
-      "car": "2",
-      "driver": "Cindric",
-      "interval": 4.123
+      "car": "97",
+      "driver": "Van Gisbergen",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 21,
-      "car": "4",
-      "driver": "Berry",
-      "interval": 4.567
+      "car": "2",
+      "driver": "Cindric",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 22,
-      "car": "34",
-      "driver": "McDowell",
-      "interval": 5.234
+      "car": "45",
+      "driver": "Reddick",
+      "interval": null,
+      "lapsCompleted": 200,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     },
     {
       "position": 23,
-      "car": "77",
-      "driver": "Hocevar",
-      "interval": 0.089
-    },
-    {
-      "position": 24,
-      "car": "43",
-      "driver": "Jones",
-      "interval": 6.012
-    },
-    {
-      "position": 25,
-      "car": "42",
-      "driver": "Nemechek",
-      "interval": 6.543
-    },
-    {
-      "position": 26,
-      "car": "16",
-      "driver": "Allmendinger",
-      "interval": 7.234
-    },
-    {
-      "position": 27,
-      "car": "38",
-      "driver": "Gilliland",
-      "interval": 8.012
-    },
-    {
-      "position": 28,
-      "car": "51",
-      "driver": "Haley",
-      "interval": 0.145
-    },
-    {
-      "position": 29,
-      "car": "15",
-      "driver": "Ware",
-      "interval": 9.456
-    },
-    {
-      "position": 30,
-      "car": "10",
-      "driver": "Gragson",
-      "interval": 10.123
+      "car": "23",
+      "driver": "Wallace",
+      "interval": null,
+      "lapsCompleted": 199,
+      "passingDifferential": 0,
+      "status": 1,
+      "isOnTrack": true,
+      "isOnDVP": false,
+      "pitStops": []
     }
   ]
 }
