@@ -22,7 +22,7 @@ class Series(Enum):
     """NASCAR Series IDs"""
 
     CUP = 1
-    XFINITY = 2
+    OREILLY = 2  # O'Reilly Auto Parts Series (formerly Xfinity)
     TRUCKS = 3
 
 
@@ -96,8 +96,8 @@ class NascarApiClient:
 
         if series == Series.CUP:
             return ops.get("cup")
-        elif series == Series.XFINITY:
-            return ops.get("xfinity")
+        elif series == Series.OREILLY:
+            return ops.get("xfinity")  # API still uses 'xfinity' key
         elif series == Series.TRUCKS:
             return ops.get("trucks")
 
@@ -109,7 +109,7 @@ class NascarApiClient:
         Returns data in our camelCase format
 
         Args:
-            series: Which series to fetch (CUP, XFINITY, TRUCKS)
+            series: Which series to fetch (CUP, OREILLY, TRUCKS)
             use_cacher: Use cacher endpoint (has intervals) vs basic feed
         """
         if use_cacher:
@@ -231,7 +231,7 @@ def main():
         "--series",
         type=str,
         default="CUP",
-        choices=["CUP", "XFINITY", "TRUCKS"],
+        choices=["CUP", "OREILLY", "TRUCKS"],
         help="Which series to fetch",
     )
     parser.add_argument(
