@@ -1,0 +1,21 @@
+# NASCAR Live Poller Systemd Service
+# Install to: /etc/systemd/system/nascar-poller.service
+
+[Unit]
+Description=NASCAR Live Data Poller
+After=network.target
+
+[Service]
+Type=simple
+User=btm253
+WorkingDirectory=/home/btm253/sandbox/nascarPylon
+ExecStart=/usr/bin/python3 /home/btm253/sandbox/nascarPylon/tools/livePoller.py
+Restart=always
+RestartSec=10
+
+# Logging
+StandardOutput=append:/home/btm253/sandbox/nascarPylon/logs/poller.log
+StandardError=append:/home/btm253/sandbox/nascarPylon/logs/poller-error.log
+
+[Install]
+WantedBy=multi-user.target
