@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASCAR Pylon Live</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;900&family=Roboto+Mono:wght@500;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            font-family: 'Roboto Condensed', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            color: #00d4ff;
+        }
+
+        .mode-badge {
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        .mode-badge.live {
+            background: linear-gradient(135deg, #ff0000, #ff4444);
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+            animation: pulse 2s infinite;
+        }
+
+        .mode-badge.idle {
+            background: linear-gradient(135deg, #444, #666);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Race Header */
+        .race-header {
+            padding: 30px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #333;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .race-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #00d4ff, #00ff88);
+        }
+
+        .race-header.flag-green::before {
+            background: linear-gradient(90deg, #00ff00, #00ff88);
+        }
+
+        .race-header.flag-yellow::before {
+            background: linear-gradient(90deg, #ffff00, #ffaa00);
+        }
+
+        .race-header.flag-red::before {
+            background: linear-gradient(90deg, #ff0000, #ff4444);
+        }
+
+        .race-name {
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .race-info {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .flag-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .flag-status.green {
+            background: rgba(0, 255, 0, 0.2);
+            color: #00ff00;
+            border: 2px solid #00ff00;
+        }
+
+        .flag-status.yellow {
+            background: rgba(255, 255, 0, 0.2);
+            color: #ffff00;
+            border: 2px solid #ffff00;
+        }
+
+        .flag-status.red {
+            background: rgba(255, 0, 0, 0.2);
+            color: #ff0000;
+            border: 2px solid #ff0000;
+        }
+
+        .flag-status.white {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border: 2px solid #ffffff;
+        }
+
+        .flag-status.checkered {
+            background: linear-gradient(45deg, #000 25%, #fff 25%, #fff 50%, #000 50%, #000 75%, #fff 75%, #fff);
+            background-size: 20px 20px;
+            color: #fff;
+            border: 2px solid #fff;
+        }
+
+        .lap-counter {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 24px;
+            font-weight: 700;
+            color: #00d4ff;
+        }
+
+        .laps-to-go {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 18px;
+            color: #ffaa00;
+        }
+
+        /* Position Grid */
+        .position-grid {
+            display: grid;
+            gap: 8px;
+        }
+
+        .position-row {
+            display: grid;
+            grid-template-columns: 60px 80px 250px 1fr 120px 120px;
+            gap: 15px;
+            padding: 15px 20px;
+            background: rgba(30, 30, 30, 0.8);
+            border-radius: 10px;
+            align-items: center;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .position-row:hover {
+            background: rgba(40, 40, 40, 0.9);
+            transform: translateX(5px);
+        }
+
+        .position-row.leader {
+            border-left-color: #00ff00;
+            background: rgba(0, 255, 0, 0.05);
+        }
+
+        .position-row.battle {
+            border-left-color: #ffff00;
+            background: rgba(255, 255, 0, 0.05);
+        }
+
+        .position-row.top3 {
+            background: rgba(255, 215, 0, 0.08);
+        }
+
+        .position-number {
+            font-size: 28px;
+            font-weight: 900;
+            text-align: center;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .position-number.p1 { color: #FFD700; }
+        .position-number.p2 { color: #C0C0C0; }
+        .position-number.p3 { color: #CD7F32; }
+
+        .car-number {
+            font-size: 26px;
+            font-weight: 900;
+            color: #00d4ff;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .driver-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .driver-name {
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .driver-status {
+            display: flex;
+            gap: 8px;
+            margin-top: 4px;
+        }
+
+        .status-badge {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .status-badge.pit {
+            background: #ff6600;
+            color: #000;
+        }
+
+        .status-badge.dvp {
+            background: #ff0000;
+            color: #fff;
+        }
+
+        .status-badge.off {
+            background: #666;
+            color: #fff;
+        }
+
+        .interval {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .interval.leader {
+            color: #00ff00;
+        }
+
+        .interval.gap {
+            color: #ffaa00;
+        }
+
+        .speed-info {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 14px;
+            color: #888;
+            text-align: right;
+        }
+
+        /* Points Standings */
+        .points-header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: 900;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #00d4ff;
+        }
+
+        .points-row {
+            display: grid;
+            grid-template-columns: 60px 80px 250px 1fr 120px;
+            gap: 15px;
+            padding: 15px 20px;
+            background: rgba(30, 30, 30, 0.8);
+            border-radius: 10px;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .points-value {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .points-value.leader {
+            color: #00ff00;
+        }
+
+        .points-value.deficit {
+            color: #ff4444;
+        }
+
+        /* Schedule */
+        .schedule-row {
+            padding: 20px;
+            background: rgba(30, 30, 30, 0.8);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border-left: 4px solid #00d4ff;
+            transition: all 0.3s ease;
+        }
+
+        .schedule-row:hover {
+            background: rgba(40, 40, 40, 0.9);
+            transform: translateX(5px);
+        }
+
+        .schedule-row.playoff {
+            border-left-color: #ffff00;
+            background: rgba(255, 255, 0, 0.05);
+        }
+
+        .schedule-date {
+            font-family: 'Roboto Mono', monospace;
+            font-size: 16px;
+            color: #00d4ff;
+            margin-bottom: 5px;
+        }
+
+        .schedule-race-name {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        .schedule-series {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+        .schedule-series.CUP {
+            background: #ffaa00;
+            color: #000;
+        }
+
+        .schedule-series.OREILLY {
+            background: #00ff00;
+            color: #000;
+        }
+
+        .schedule-series.TRUCKS {
+            background: #ff0000;
+            color: #fff;
+        }
+
+        /* Scrolling indicator */
+        .scroll-indicator {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 100px 20px;
+            font-size: 24px;
+            color: #00d4ff;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 12px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top-bar">
+            <div class="logo">NASCAR PYLON</div>
+            <div class="mode-badge" id="modeBadge">LOADING</div>
+        </div>
+
+        <div id="content" class="loading">
+            Connecting to live data...
+        </div>
+
+        <div class="footer">
+            NASCAR Pylon Live Display | Last Update: <span id="lastUpdate">--</span>
+        </div>
+    </div>
+
+    <script>
+        let lastMode = null;
+
+        function fetchData() {
+            fetch('/api/data')
+                .then(response => response.json())
+                .then(data => {
+                    const modeBadge = document.getElementById('modeBadge');
+                    modeBadge.textContent = data.mode + ' MODE';
+                    modeBadge.className = 'mode-badge ' + data.mode.toLowerCase();
+
+                    document.getElementById('lastUpdate').textContent =
+                        new Date(data.timestamp).toLocaleTimeString();
+
+                    if (data.mode === 'LIVE') {
+                        renderLive(data.data);
+                    } else if (data.mode === 'IDLE') {
+                        if (data.data && data.data.mode === 'POINTS') {
+                            renderPoints(data.data);
+                        } else if (data.data && data.data.mode === 'SCHEDULE') {
+                            renderSchedule(data.data);
+                        }
+                    }
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('content').innerHTML =
+                        '<div class="loading">Connection lost. Retrying...</div>';
+                });
+        }
+
+        function renderLive(layout) {
+            const flag = layout.header.flag.toLowerCase();
+
+            let html = `
+                <div class="race-header flag-${flag}">
+                    <div class="race-name">${layout.header.track || 'NASCAR Cup Series'}</div>
+                    <div class="race-info">
+                        <div class="flag-status ${flag}">
+                            ${layout.header.flag}
+                        </div>
+                        <div class="lap-counter">
+                            LAP ${layout.header.lap} / ${layout.header.total}
+                        </div>
+                        <div class="laps-to-go">
+                            ${layout.header.lapsToGo} TO GO
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-grid">
+            `;
+
+            // Render all cars
+            const allCars = [...layout.fixed, ...layout.scrolling];
+            allCars.forEach(car => {
+                html += renderCarRow(car, layout.header.lap);
+            });
+
+            html += '</div>';
+
+            if (layout.scrolling && layout.scrolling.length > 0) {
+                html += '<div class="scroll-indicator">↓ Scrolling through field ↓</div>';
+            }
+
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function renderCarRow(car, currentLap) {
+            let classes = 'position-row';
+            if (car.interval === null) classes += ' leader';
+            if (car.battling) classes += ' battle';
+            if (car.position <= 3) classes += ' top3';
+
+            let posClass = 'position-number';
+            if (car.position === 1) posClass += ' p1';
+            else if (car.position === 2) posClass += ' p2';
+            else if (car.position === 3) posClass += ' p3';
+
+            // Check for recent pit stop (within last 2 laps)
+            let recentPit = false;
+            if (car.pitStops && car.pitStops.length > 0) {
+                const lastPit = car.pitStops[car.pitStops.length - 1];
+                if (lastPit.pit_in_leader_lap > 0) {
+                    const lapsSincePit = currentLap - lastPit.pit_in_leader_lap;
+                    if (lapsSincePit >= 0 && lapsSincePit <= 2) {
+                        recentPit = true;
+                    }
+                }
+            }
+
+            let statusBadges = '';
+            if (recentPit) {
+                statusBadges += '<span class="status-badge pit">PIT</span>';
+            }
+            if (!car.isOnTrack) {
+                statusBadges += '<span class="status-badge off">OFF</span>';
+            }
+            if (car.isOnDVP) {
+                statusBadges += '<span class="status-badge dvp">DVP</span>';
+            }
+
+            let interval = car.interval === null ? 'LEADER' : `+${car.interval.toFixed(3)}`;
+            let intervalClass = car.interval === null ? 'interval leader' : 'interval gap';
+
+            let speedInfo = '';
+            if (car.lastLapSpeed) {
+                speedInfo = `${car.lastLapSpeed.toFixed(1)} mph`;
+            }
+
+            return `
+                <div class="${classes}">
+                    <div class="${posClass}">${car.position}</div>
+                    <div class="car-number">#${car.car}</div>
+                    <div class="driver-info">
+                        <div class="driver-name">${car.driver}</div>
+                        <div class="driver-status">${statusBadges}</div>
+                    </div>
+                    <div></div>
+                    <div class="${intervalClass}">${interval}</div>
+                    <div class="speed-info">${speedInfo}</div>
+                </div>
+            `;
+        }
+
+        function renderPoints(layout) {
+            let html = '<div class="points-header">POINTS STANDINGS</div>';
+            html += '<div class="position-grid">';
+
+            layout.drivers.forEach(driver => {
+                let posClass = 'position-number';
+                if (driver.position === 1) posClass += ' p1';
+                else if (driver.position === 2) posClass += ' p2';
+                else if (driver.position === 3) posClass += ' p3';
+
+                let pointsBack = driver.pointsBack === 0 ? 'LEADER' : `-${driver.pointsBack}`;
+                let pointsClass = driver.pointsBack === 0 ? 'points-value leader' : 'points-value deficit';
+
+                html += `
+                    <div class="points-row">
+                        <div class="${posClass}">${driver.position}</div>
+                        <div class="car-number">#${driver.car}</div>
+                        <div class="driver-name">${driver.driver}</div>
+                        <div></div>
+                        <div class="${pointsClass}">${pointsBack}</div>
+                    </div>
+                `;
+            });
+
+            html += '</div>';
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function renderSchedule(layout) {
+            let html = '<div class="points-header">UPCOMING RACES</div>';
+
+            layout.rows.forEach(race => {
+                let classes = 'schedule-row';
+                if (race.isChase) classes += ' playoff';
+
+                html += `
+                    <div class="${classes}">
+                        <div class="schedule-date">${race.date} • ${race.time}</div>
+                        <div class="schedule-race-name">${race.name}</div>
+                        <div>
+                            <span class="schedule-series ${race.series}">${race.series}</span>
+                            <span style="color: #888;">${race.broadcast}</span>
+                        </div>
+                    </div>
+                `;
+            });
+
+            document.getElementById('content').innerHTML = html;
+        }
+
+        // Fetch data every 2 seconds
+        fetchData();
+        setInterval(fetchData, 2000);
+    </script>
+</body>
+</html>
