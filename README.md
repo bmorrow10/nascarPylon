@@ -77,7 +77,7 @@ nascarPylon/
 ├── data/                       # Race data (JSON)
 ├── schedules/                  # CSV schedule files
 ├── tools/
-│   ├── live_poller.py         # Background data collector
+│   ├── livePoller.py          # Background data collector
 │   ├── nascarAPIclient.py     # NASCAR API client
 │   ├── convertSchedules.py    # CSV to JSON converter
 │   └── convertStandings.py    # Standings converter
